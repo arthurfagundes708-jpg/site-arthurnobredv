@@ -253,6 +253,25 @@
   }
   .whatsapp-float:hover, .whatsapp-float:focus-visible{transform:scale(1.06)}
   .whatsapp-float svg{width:28px; height:28px}
+
+  /* ---------- LIGHT SECTIONS (areas + sobre) ---------- */
+  .band.light{
+    background:var(--paper);
+    color:var(--on-paper);
+    border-top-color:rgba(35,34,47,0.14);
+  }
+  .band.light .eyebrow{color:var(--on-paper-dim);}
+  .band.light .eyebrow::before{background:var(--ink); opacity:0.55;}
+  .band.light em{color:var(--ink);}
+  .band.light .texture{
+    background-image:
+      repeating-linear-gradient(135deg, rgba(35,34,47,0.035) 0 1px, transparent 1px 64px),
+      repeating-linear-gradient(45deg, rgba(35,34,47,0.035) 0 1px, transparent 1px 64px);
+  }
+  .areas.light .areas-head p{color:var(--on-paper-dim);}
+  .areas.light .areas-grid{background:rgba(35,34,47,0.14); border-color:rgba(35,34,47,0.14);}
+  .areas.light .area-card{color:var(--text);}
+  .about.light p{color:var(--on-paper-dim);}
 </style>
 </head>
 <body>
@@ -315,7 +334,7 @@
     </div>
   </section>
 
-  <section id="atuacao" class="band areas">
+  <section id="atuacao" class="band areas light">
     <div class="texture"></div>
     <div class="wrap" style="position:relative">
       <div class="areas-head">
@@ -352,7 +371,7 @@
     </div>
   </section>
 
-  <section id="sobre" class="band about">
+  <section id="sobre" class="band about light">
     <div class="wrap about-inner">
       <p class="eyebrow">Quem conduz o seu caso</p>
       <h2>Trajetória construída na prática, tribunal a tribunal.</h2>
